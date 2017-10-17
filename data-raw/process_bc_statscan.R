@@ -15,9 +15,7 @@
 ## Regional Districts) in to a BC only regional district map. The data are available here:
 ## http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gcd_000b11a_e.zip
 ## under the Statistics Canada Open License Agreement: http://www.statcan.gc.ca/eng/reference/licence-eng
-library("sf")
-library("devtools")
-library("bcmaps")
+source("data-raw/utils.R")
 
 url <- "http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gpr_000b11a_e.zip"
 path <- "data-raw/prov_territories_statscan"
@@ -35,13 +33,6 @@ if (!file.exists(shp_path)) {
 
 }
 
-cd <- read_sf(shp_path)
-
-bc_bound_hres <- cd[cd$PRUID == 59,]
-
-## Transform to BC Albers
-bc_bound_hres <- bcmaps::transform_bc_albers(bc_bound_hres)
-
-bc_bound_hres <- bcmaps::fix_geo_problems(bc_bound_hres)
+bc_bound_hres <- process_file(shp_path, filter_stmt = PRUID == 59)
 
 use_data(bc_bound_hres, overwrite = TRUE, compress = "xz")
