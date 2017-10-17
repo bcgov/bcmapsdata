@@ -1,4 +1,5 @@
 library("sf")
+library("dplyr")
 library("devtools")
 library("bcmaps")
 
@@ -12,8 +13,27 @@ set_utf8 <- function(sf_obj) {
   sf_obj
 }
 
-process_file <- function(file, transform = TRUE, repair = TRUE, clip_bc = FALSE) {
-  obj <- sf::read_sf(file)
+#' Prepare a spatial file for inclusion in bcmaps.rdata package
+#'
+#' @param file path to shp or gdb
+#' @param transform transform to BC Albers (default `TRUE`)
+#' @param repair Repair toplogy (default `TRUE`)
+#' @param filter_stmt An optional filter statement - bare, unquoted. E.g., `PRUID == 59`
+#' @param clip_bc Does it require clipping to BC boundary? Default `FALSE`
+#'
+#' @return
+#' @export
+#'
+#' @examples
+process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_stmt, 
+                         clip_bc = FALSE) {
+  
+  obj <- sf::read_sf(file, layer = layer)
+  
+  if (!missing(filter_stmt)) {
+    f_q <- rlang::enquo(filter_stmt)
+    obj <- dplyr::filter(obj, !!f_q)
+  }
   
   if (transform) {
     obj <- bcmaps::transform_bc_albers(obj)
