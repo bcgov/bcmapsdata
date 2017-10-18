@@ -44,7 +44,11 @@ process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_st
   }
   
   if (repair) {
-    obj <- bcmaps::fix_geo_problems(obj)
+    if (!is.na(sf_extSoftVersion()["lwgeom"])) {
+      obj <- sf::st_make_valid(obj)
+    } else {
+      obj <- bcmaps::fix_geo_problems(obj)
+    }
   }
   
   obj
