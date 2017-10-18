@@ -1,20 +1,25 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 #### Add a project state badge
-See <https://github.com/BCDevExchange/Our-Project-Docs/blob/master/discussion/projectstates.md>
-If you have bcgovr installed and you use RStudio, click the 'Insert BCDevex Badge' Addin.
 
-package name
+<a rel="Exploration" href="https://github.com/BCDevExchange/docs/blob/master/discussion/projectstates.md"><img alt="Being designed and built, but in the lab. May change, disappear, or be buggy." style="border-width:0" src="https://assets.bcdevexchange.org/images/badges/exploration.svg" title="Being designed and built, but in the lab. May change, disappear, or be buggy." /></a>
+
+bcmaps.rdata
 ============
 
-Description of package
-
-### Features
+This is a package that contains many spatial layers for British Columbia. It is being built as a new 'backend' package to provide the layers available in the [bcmaps](https://github.com/bcgov/bcmaps) package.
 
 ### Installation
+
+``` r
+# install.packages("remotes")
+remotes::install_github("bcgov/bcmaps.rdata")
+```
 
 ### Usage
 
 ### Project Status
+
+This package is under active development, in conjunction with a rewrite of the **bcmaps** package. That development is ongoing under the [new-frontend branch](https://github.com/bcgov/bcmaps/tree/new-frontend).
 
 ### Getting Help or Reporting an Issue
 
@@ -29,12 +34,3 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 ### License
 
 Apache 2.0 See our [license](LICENSE) for more details.
-
-Example
--------
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-## basic example code
-```
