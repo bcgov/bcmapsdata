@@ -14,7 +14,7 @@
 #'
 #' High Resolution Boundary of British Columbia
 #'
-#' @format A spatialPolygonsDataFrame defining the boundary of each British Columbia. Scale is 1:7.5M
+#' @format A layer defining the boundary of each British Columbia. Scale is 1:7.5M
 #'
 #' @source Adapted from Statistics Canada, Provinces/Territories Boundary File 2011 Census (gpr_000b11a_e), 2016-01-15.
 #' This does not constitute an endorsement by Statistics Canada of this product.
