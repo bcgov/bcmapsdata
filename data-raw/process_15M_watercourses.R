@@ -10,7 +10,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
-source("data-raw/data-raw.R")
+source("data-raw/utils.R")
 
 watercourses_15M_zip <- "data-raw/canvec_15M_hydro/canvec_15M_CA_Hydro_shp.zip"
 
