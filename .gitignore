@@ -4,3 +4,4 @@
 out/
 internal.R
 *.DS_Store
+data-raw/todo/
