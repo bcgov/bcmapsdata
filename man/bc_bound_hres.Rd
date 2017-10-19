@@ -3,8 +3,8 @@
 \docType{data}
 \name{bc_bound_hres}
 \alias{bc_bound_hres}
-\title{BC Boundary}
-\format{A layer defining the boundary of each British Columbia. Scale is 1:7.5M}
+\title{BC Boundary - High Resolution}
+\format{An \code{sf} layer defining the boundary of each British Columbia.}
 \source{
 Adapted from Statistics Canada, Provinces/Territories Boundary File 2011 Census (gpr_000b11a_e), 2016-01-15.
 This does not constitute an endorsement by Statistics Canada of this product.

@@ -10,11 +10,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
-#' BC Boundary
+#' BC Boundary - High Resolution
 #'
 #' High Resolution Boundary of British Columbia
 #'
-#' @format A layer defining the boundary of each British Columbia. Scale is 1:7.5M
+#' @format An `sf` layer defining the boundary of each British Columbia.
 #'
 #' @source Adapted from Statistics Canada, Provinces/Territories Boundary File 2011 Census (gpr_000b11a_e), 2016-01-15.
 #' This does not constitute an endorsement by Statistics Canada of this product.

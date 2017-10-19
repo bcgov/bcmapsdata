@@ -4,7 +4,8 @@
 \name{bcmaps.rdata}
 \alias{bcmaps.rdata}
 \alias{bcmaps.rdata-package}
-\title{bcmaps.rdata: A data package providing various map layers for British Columbia}
+\title{bcmaps.rdata: A data package providing various map layers for British Columbia.
+This package serves as the backend 'datastore' for the bcmaps package.}
 \description{
 Various layers of B.C., including administrative boundaries, natural
 resource management boundaries, etc. All layers are available as sf objects,
