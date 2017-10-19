@@ -26,9 +26,11 @@ set_utf8 <- function(sf_obj) {
 #'
 #' @examples
 process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_stmt, 
-                         clip_bc = FALSE) {
+                         clip_bc = FALSE, crs = NULL) {
   
   obj <- sf::read_sf(file, layer = layer)
+  
+  if (!is.null(crs)) st_crs(obj) <- crs
   
   if (!missing(filter_stmt)) {
     f_q <- rlang::enquo(filter_stmt)
