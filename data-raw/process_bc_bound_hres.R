@@ -10,11 +10,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
-################################################################################
-## Convert Statistics Canada 2011 cencus divisions (which are equivalent to BC
-## Regional Districts) in to a BC only regional district map. The data are available here:
-## http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gcd_000b11a_e.zip
-## under the Statistics Canada Open License Agreement: http://www.statcan.gc.ca/eng/reference/licence-eng
 source("data-raw/utils.R")
 
 url <- "http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gpr_000b11a_e.zip"
