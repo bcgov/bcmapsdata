@@ -13,7 +13,6 @@
 library("sf")
 library("dplyr")
 library("devtools")
-library("bcmaps")
 
 set_utf8 <- function(sf_obj) {
   char_cols <- names(sf_obj)[vapply(sf_obj, is.character, FUN.VALUE = logical(1))]
@@ -50,6 +49,7 @@ process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_st
   }
   
   if (transform) {
+    if (!requireNamespace("bcmaps")) stop("bcmaps package required")
     obj <- bcmaps::transform_bc_albers(obj)
   }
   
@@ -62,6 +62,7 @@ process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_st
     if (!is.na(sf_extSoftVersion()["lwgeom"])) {
       obj <- sf::st_make_valid(obj)
     } else {
+      if (!requireNamespace("bcmaps")) stop("bcmaps package required")
       obj <- bcmaps::fix_geo_problems(obj)
     }
   }
