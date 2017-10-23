@@ -29,10 +29,7 @@ set_utf8 <- function(sf_obj) {
 #' @param filter_stmt An optional filter statement - bare, unquoted. E.g., `PRUID == 59`
 #' @param clip_bc Does it require clipping to BC boundary? Default `FALSE`
 #'
-#' @return
-#' @export
-#'
-#' @examples
+#' @return processed sf object
 process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_stmt, 
                          clip_bc = FALSE, crs = NULL) {
   
