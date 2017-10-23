@@ -9,9 +9,6 @@
 # Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
-
-library("sf")
-library("dplyr")
 library("devtools")
 
 set_utf8 <- function(sf_obj) {
@@ -39,17 +36,26 @@ set_utf8 <- function(sf_obj) {
 process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_stmt, 
                          clip_bc = FALSE, crs = NULL) {
   
+  if (!requireNamespace("sf")) {
+    stop("sf package required but not availahble")
+  }
+  
+  bcmaps_avail <- requireNamespace("bcmaps")
+  
   obj <- sf::read_sf(file, layer = layer)
   
-  if (!is.null(crs)) st_crs(obj) <- crs
+  if (!is.null(crs)) sf::st_crs(obj) <- crs
   
   if (!missing(filter_stmt)) {
+    if (!requireNamespace("dplyr") || !requireNamespace("rlang")) {
+      stop("dplyr and rlang required for filtering")
+    }
     f_q <- rlang::enquo(filter_stmt)
     obj <- dplyr::filter(obj, !!f_q)
   }
   
   if (transform) {
-    if (!requireNamespace("bcmaps")) stop("bcmaps package required")
+    if (!bcmaps_avail) stop("bcmaps package required")
     obj <- bcmaps::transform_bc_albers(obj)
   }
   
@@ -62,7 +68,7 @@ process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_st
     if (!is.na(sf_extSoftVersion()["lwgeom"])) {
       obj <- sf::st_make_valid(obj)
     } else {
-      if (!requireNamespace("bcmaps")) stop("bcmaps package required")
+      if (!bcmaps_avail) stop("bcmaps package required")
       obj <- bcmaps::fix_geo_problems(obj)
     }
   }
