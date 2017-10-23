@@ -54,7 +54,8 @@ process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_st
   }
   
   if (clip_bc) {
-    obj <- sf::st_intersection(obj, bcmaps.rdata::bc_bound_hres)
+    bc_clip <- readRDS("data/bc_bound_hres.rda")
+    obj <- sf::st_intersection(obj, bc_clip)
   }
   
   if (repair) {
