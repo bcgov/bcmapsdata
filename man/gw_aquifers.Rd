@@ -3,9 +3,7 @@
 \docType{data}
 \name{gw_aquifers}
 \alias{gw_aquifers}
-\title{Polygons delineating British Columbia's developed ground water aquifers (that have been mapped). Most aquifer boundaries
-are delineated based on geology, hydrology and topographic information. Some aquifer boundaries stop at the border of BC
-mapsheet boundaries due to resource or data constraints at the time of mapping.}
+\title{British Columbia's developed ground water aquifers.}
 \format{An \code{sf} object with polygons delineating mapped, developed ground water aquifers for British Columbia.}
 \source{
 Original data from
@@ -18,8 +16,9 @@ Government License - British Columbia}.
 gw_aquifers
 }
 \description{
-Polygons delineating British Columbia's developed ground water aquifers (that have been mapped). Most aquifer boundaries
-are delineated based on geology, hydrology and topographic information. Some aquifer boundaries stop at the border of BC
+Most aquifer boundaries are delineated based on geology, hydrology and
+topographic information. Some aquifer boundaries stop at the border of BC
 mapsheet boundaries due to resource or data constraints at the time of mapping.
+Note that not all aquifers in B.C. have been mapped.
 }
 \keyword{datasets}
