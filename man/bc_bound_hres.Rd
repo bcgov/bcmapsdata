@@ -9,7 +9,7 @@
 Adapted from Statistics Canada, Provinces/Territories Boundary File 2011 Census (gpr_000b11a_e), 2016-01-15.
 This does not constitute an endorsement by Statistics Canada of this product.
 http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gpr_000b11a_e.zip
-Available under the \href{http://www.statcan.gc.ca/eng/reference/licence-eng}{Statistics Canada Open License Agreement}
+Available under the \href{http://www.statcan.gc.ca/eng/reference/licence-eng}{Statistics Canada Open Licence Agreement}
 }
 \usage{
 bc_bound_hres

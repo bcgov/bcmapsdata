@@ -12,8 +12,8 @@ resource management boundaries, etc. All layers are available as sf objects,
 and are in \href{http://spatialreference.org/ref/epsg/nad83-bc-albers/}{BC Albers}
 projection, which is the
 \href{https://www.for.gov.bc.ca/hts/risc/pubs/other/mappro/index.htm}{B.C. government standard}.
-The layers are sourced from various places under open licenses, including
-\href{http://data.gov.bc.ca}{DataBC}, the Governmment of Canada
+The layers are sourced from various places under open licences, including the
+\href{http://data.gov.bc.ca}{B.C. Data Catalogue}, the Governmment of Canada
 \href{http://open.canada.ca/en/open-data}{Open Data Portal}, and
 \href{http://www.statcan.gc.ca/eng/reference/licence-eng}{Statistics Canada}.
 Each layer's help page contians a section describing the source for the data.

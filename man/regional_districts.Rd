@@ -3,23 +3,21 @@
 \docType{data}
 \name{regional_districts}
 \alias{regional_districts}
-\title{British Columbia Ecoregions}
+\title{British Columbia Regional Districts}
 \format{An \code{sf} polygons object with the boundaries of British Columbia's
 regional districts.}
 \source{
-Original data from
-\href{https://catalogue.data.gov.bc.ca/pt_BR/dataset/d1aff64e-dbfe-45a6-af97-582b7f6418b9}{DataBC},
+Original data from the
+\href{https://catalogue.data.gov.bc.ca/pt_BR/dataset/d1aff64e-dbfe-45a6-af97-582b7f6418b9}{B.C. Data Catalogue},
 under the
-\href{http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf}{Open
+\href{https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61}{Open
 Government Licence - British Columbia}.
 }
 \usage{
 regional_districts
 }
 \description{
-An ecoregion is an area with major physiographic and minor macroclimatic or
-oceanographic variation. There are 43 ecoregion in British Columbia of which
-39 are terrestrial. Ecodivsions are meant to be mapped at 1:500,000 for
-regional strategic planning
+Legally defined Regional District polygons were drawn from metes and bounds descriptions
+as written in Letters Patent for Regional Districts in the province of British Columbia.
 }
 \keyword{datasets}

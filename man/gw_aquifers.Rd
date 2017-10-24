@@ -3,14 +3,14 @@
 \docType{data}
 \name{gw_aquifers}
 \alias{gw_aquifers}
-\title{British Columbia's developed ground water aquifers.}
+\title{British Columbia's developed ground water aquifers}
 \format{An \code{sf} object with polygons delineating mapped, developed ground water aquifers for British Columbia.}
 \source{
-Original data from
-\href{https://catalogue.data.gov.bc.ca/dataset/ground-water-aquifers}{},
+Original data from the
+\href{https://catalogue.data.gov.bc.ca/dataset/099d69c5-1401-484d-9e19-c121ccb7977c}{B.C. Data Catalogue},
 under the
-\href{http://www2.gov.bc.ca/gov/content/data/open-data/open-government-license-bc}{Open
-Government License - British Columbia}.
+\href{https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61}{Open
+Government Licence - British Columbia}.
 }
 \usage{
 gw_aquifers

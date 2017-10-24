@@ -7,11 +7,11 @@
 \format{An \code{sf} polygons object with the boundaries of British Columbia's
 43 ecoregions.}
 \source{
-Original data from
-\href{http://catalogue.data.gov.bc.ca/dataset/ecoregions-ecoregion-ecosystem-classification-of-british-columbia}{DataBC},
+Original data from the
+\href{https://catalogue.data.gov.bc.ca/dataset/51832f47-efdf-4956-837a-45fc2c9032dd}{B.C. Data Catalogue},
 under the
-\href{http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf}{Open
-Government License - British Columbia}.
+\href{https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61}{Open
+Government Licence - British Columbia}.
 }
 \usage{
 ecoregions

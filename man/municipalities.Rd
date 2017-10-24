@@ -3,23 +3,21 @@
 \docType{data}
 \name{municipalities}
 \alias{municipalities}
-\title{British Columbia Ecoregions}
+\title{British Columbia Municipalities}
 \format{An \code{sf} polygons object with the boundaries of British Columbia's
 municipalities.}
 \source{
-Original data from
-\href{https://catalogue.data.gov.bc.ca/dataset/e3c3c580-996a-4668-8bc5-6aa7c7dc4932}{DataBC},
+Original data from the
+\href{https://catalogue.data.gov.bc.ca/dataset/e3c3c580-996a-4668-8bc5-6aa7c7dc4932}{B.C. Data Catalogue},
 under the
-\href{http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf}{Open
-Government License - British Columbia}.
+\href{https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61}{Open
+Government Licence - British Columbia}.
 }
 \usage{
 municipalities
 }
 \description{
-An ecoregion is an area with major physiographic and minor macroclimatic or
-oceanographic variation. There are 43 ecoregion in British Columbia of which
-39 are terrestrial. Ecodivsions are meant to be mapped at 1:500,000 for
-regional strategic planning
+Legally defined Municipal polygons were drawn from metes and bounds descriptions
+as written in Letters Patent for Municipalities in the province of British Columbia.
 }
 \keyword{datasets}
