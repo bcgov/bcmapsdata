@@ -9,8 +9,8 @@ seven air zones.
 
 The data contains one column, \code{Airzone}, with the name of the Air Zone.}
 \source{
-Original data from \href{http://catalogue.data.gov.bc.ca/dataset/british-columbia-air-zones}{DataBC},
-under the \href{http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf}{Open Government License - British Columbia}.
+Original data from the \href{https://catalogue.data.gov.bc.ca/dataset/e8eeefc4-2826-47bc-8430-85703d328516}{B.C. Data Catalogue},
+under the \href{https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61}{Open Government Licence - British Columbia}.
 }
 \usage{
 airzones
@@ -18,8 +18,8 @@ airzones
 \description{
 Boundaries of British Columbia Air Zones, which are areas of the province
 for reporting on Canadian Ambient Air Quality Standards
-(\href{http://www.ccme.ca/en/current_priorities/air/caaqs.html}{CAAQS}), and
+(\href{http://www.ccme.ca/en/current_priorities/air/index.html}{CAAQS}), and
 implementing the Air Quality Management System. For more information on Air
-Zones in B.C. see \url{http://www.bcairquality.ca/plans/national-air-quality-management-system.html}.
+Zones in B.C. see \url{https://www2.gov.bc.ca/gov/content?id=8FA84ADC845A49AB93E525A58D9D4A97}.
 }
 \keyword{datasets}
