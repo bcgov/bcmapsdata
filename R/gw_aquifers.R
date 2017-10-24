@@ -10,10 +10,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
-#' Polygons delineating British Columbia's developed ground water aquifers (that have been mapped). Most aquifer boundaries
-#' are delineated based on geology, hydrology and topographic information. Some aquifer boundaries stop at the border of BC
+#' British Columbia's developed ground water aquifers 
+#' 
+#' Most aquifer boundaries are delineated based on geology, hydrology and 
+#' topographic information. Some aquifer boundaries stop at the border of BC
 #' mapsheet boundaries due to resource or data constraints at the time of mapping.
-#'
+#' Note that not all aquifers in B.C. have been mapped.
 #' @format An `sf` object with polygons delineating mapped, developed ground water aquifers for British Columbia.
 #'
 #' @source Original data from
