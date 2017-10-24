@@ -10,20 +10,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
-#' British Columbia Ecoregions
+#' British Columbia Municipalities
 #'
-#' An ecoregion is an area with major physiographic and minor macroclimatic or
-#' oceanographic variation. There are 43 ecoregion in British Columbia of which
-#' 39 are terrestrial. Ecodivsions are meant to be mapped at 1:500,000 for
-#' regional strategic planning
+#' Legally defined Municipal polygons were drawn from metes and bounds descriptions 
+#' as written in Letters Patent for Municipalities in the province of British Columbia. 
 #'
 #' @format An `sf` polygons object with the boundaries of British Columbia's
 #'   municipalities.
 #'
-#' @source Original data from
-#'   \href{https://catalogue.data.gov.bc.ca/dataset/e3c3c580-996a-4668-8bc5-6aa7c7dc4932}{DataBC},
+#' @source Original data from the
+#'   \href{https://catalogue.data.gov.bc.ca/dataset/e3c3c580-996a-4668-8bc5-6aa7c7dc4932}{B.C. Data Catalogue},
 #'    under the
-#'   \href{http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf}{Open
+#'   \href{https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61}{Open
 #'   Government Licence - British Columbia}.
 #'
 "municipalities"

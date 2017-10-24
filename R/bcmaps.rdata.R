@@ -18,8 +18,8 @@
 #' and are in [BC Albers](http://spatialreference.org/ref/epsg/nad83-bc-albers/)
 #' projection, which is the
 #' [B.C. government standard](https://www.for.gov.bc.ca/hts/risc/pubs/other/mappro/index.htm).
-#' The layers are sourced from various places under open licences, including
-#' [DataBC](http://data.gov.bc.ca), the Governmment of Canada
+#' The layers are sourced from various places under open licences, including the
+#' [B.C. Data Catalogue](http://data.gov.bc.ca), the Governmment of Canada
 #' [Open Data Portal](http://open.canada.ca/en/open-data), and
 #' [Statistics Canada](http://www.statcan.gc.ca/eng/reference/licence-eng).
 #' Each layer's help page contians a section describing the source for the data.

@@ -17,7 +17,7 @@
 #' @format An `sf` layer with watercourses at the 1:5M scale for British Columbia.
 #'
 #' @source Original data from
-#'   \href{https://www.nrcan.gc.ca/earth-sciences/geography/topographic-information/free-data-geogratis/download-directory-documentation/17215}{},
+#'   \href{https://www.nrcan.gc.ca/earth-sciences/geography/topographic-information/free-data-geogratis/download-directory-documentation/17215}{GeoGratis},
 #'    under the
 #'   \href{http://open.canada.ca/en/open-government-licence-canada}{Open
 #'   Government Licence - Canada}.

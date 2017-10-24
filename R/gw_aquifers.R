@@ -18,10 +18,10 @@
 #' Note that not all aquifers in B.C. have been mapped.
 #' @format An `sf` object with polygons delineating mapped, developed ground water aquifers for British Columbia.
 #'
-#' @source Original data from
-#'   \href{https://catalogue.data.gov.bc.ca/dataset/ground-water-aquifers}{},
+#' @source Original data from the
+#'   \href{https://catalogue.data.gov.bc.ca/dataset/099d69c5-1401-484d-9e19-c121ccb7977c}{B.C. Data Catalogue},
 #'    under the
-#'   \href{http://www2.gov.bc.ca/gov/content/data/open-data/open-government-license-bc}{Open
+#'   \href{https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61}{Open
 #'   Government Licence - British Columbia}.
 #'
 "gw_aquifers"

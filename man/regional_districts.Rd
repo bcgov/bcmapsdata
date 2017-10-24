@@ -11,7 +11,7 @@ Original data from
 \href{https://catalogue.data.gov.bc.ca/pt_BR/dataset/d1aff64e-dbfe-45a6-af97-582b7f6418b9}{DataBC},
 under the
 \href{http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf}{Open
-Government License - British Columbia}.
+Government Licence - British Columbia}.
 }
 \usage{
 regional_districts
