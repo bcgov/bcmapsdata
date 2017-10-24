@@ -12,9 +12,9 @@
 
 source("data-raw/utils.R")
 
-rd_zip <- "data-raw/regional_districts/BCGW_REGIONAL_DISTRICTS_GDB.zip"
-unzip(rd_zip, exdir = "data-raw/regional_districts")
+municipalities_zip <- "data-raw/municipalities/BCGW_MUNICIPALITIES_GDB.zip"
+unzip(municipalities_zip, exdir = "data-raw/municipalities")
 
-regional_districts <- process_file("data-raw/regional_districts/ABMS_REGIONAL_DISTRICTS_SP.gdb")
+municipalities <- process_file("data-raw/municipalities/ABMS_MUNICIPALITIES_SP.gdb")
 
-use_data(regional_districts, overwrite = TRUE, compress = "xz")
+use_data(municipalities, overwrite = TRUE, compress = "xz")
