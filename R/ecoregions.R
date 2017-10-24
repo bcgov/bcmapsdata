@@ -1,4 +1,4 @@
-# Copyright 2015 Province of British Columbia
+# Copyright 2017 Province of British Columbia
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,6 +24,6 @@
 #'   \href{http://catalogue.data.gov.bc.ca/dataset/ecoregions-ecoregion-ecosystem-classification-of-british-columbia}{DataBC},
 #'    under the
 #'   \href{http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf}{Open
-#'   Government License - British Columbia}.
+#'   Government Licence - British Columbia}.
 #'
 "ecoregions"

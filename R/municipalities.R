@@ -1,4 +1,4 @@
-# Copyright 2015 Province of British Columbia
+# Copyright 2017 Province of British Columbia
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,6 +24,6 @@
 #'   \href{https://catalogue.data.gov.bc.ca/dataset/e3c3c580-996a-4668-8bc5-6aa7c7dc4932}{DataBC},
 #'    under the
 #'   \href{http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf}{Open
-#'   Government License - British Columbia}.
+#'   Government Licence - British Columbia}.
 #'
 "municipalities"

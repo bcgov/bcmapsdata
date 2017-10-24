@@ -1,4 +1,4 @@
-# Copyright 2016 Province of British Columbia
+# Copyright 2017 Province of British Columbia
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,6 +20,6 @@
 #'   \href{https://www.nrcan.gc.ca/earth-sciences/geography/topographic-information/free-data-geogratis/download-directory-documentation/17215}{},
 #'    under the
 #'   \href{http://open.canada.ca/en/open-government-licence-canada}{Open
-#'   Government License - Canada}.
+#'   Government Licence - Canada}.
 #'
 "watercourses_5M"

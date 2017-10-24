@@ -1,4 +1,4 @@
-# Copyright 2016 Province of British Columbia
+# Copyright 2017 Province of British Columbia
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,6 +20,6 @@
 #'   \href{https://catalogue.data.gov.bc.ca/dataset/ground-water-aquifers}{},
 #'    under the
 #'   \href{http://www2.gov.bc.ca/gov/content/data/open-data/open-government-license-bc}{Open
-#'   Government License - British Columbia}.
+#'   Government Licence - British Columbia}.
 #'
 "gw_aquifers"

@@ -1,4 +1,4 @@
-# Copyright 2015 Province of British Columbia
+# Copyright 2017 Province of British Columbia
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 #' and are in [BC Albers](http://spatialreference.org/ref/epsg/nad83-bc-albers/)
 #' projection, which is the
 #' [B.C. government standard](https://www.for.gov.bc.ca/hts/risc/pubs/other/mappro/index.htm).
-#' The layers are sourced from various places under open licenses, including
+#' The layers are sourced from various places under open licences, including
 #' [DataBC](http://data.gov.bc.ca), the Governmment of Canada
 #' [Open Data Portal](http://open.canada.ca/en/open-data), and
 #' [Statistics Canada](http://www.statcan.gc.ca/eng/reference/licence-eng).

@@ -21,6 +21,6 @@
 #'   \href{https://www.nrcan.gc.ca/earth-sciences/geography/topographic-information/free-data-geogratis/download-directory-documentation/17215}{},
 #'    under the
 #'   \href{http://open.canada.ca/en/open-government-licence-canada}{Open
-#'   Government License - Canada}.
+#'   Government Licence - Canada}.
 #'
 "watercourses_15M"

@@ -1,4 +1,4 @@
-# Copyright 2015 Province of British Columbia
+# Copyright 2017 Province of British Columbia
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,6 +24,6 @@
 #'   The data contains one column, \code{Airzone}, with the name of the Air Zone.
 #'
 #' @source Original data from \href{http://catalogue.data.gov.bc.ca/dataset/british-columbia-air-zones}{DataBC},
-#' under the \href{http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf}{Open Government License - British Columbia}.
+#' under the \href{http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf}{Open Government Licence - British Columbia}.
 #'
 "airzones"
