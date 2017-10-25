@@ -31,6 +31,10 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ### License
 
+Please note that the data files in the data-raw directory and subdirectories are licensed separately as they come from different sources. See the approprate license file in each directory.
+
+The code in this repository is licensed under the Apache License 2.0:
+
      Copyright 2017 Province of British Columbia
      
      Licensed under the Apache License, Version 2.0 (the "License");
