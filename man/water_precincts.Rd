@@ -3,8 +3,7 @@
 \docType{data}
 \name{water_precincts}
 \alias{water_precincts}
-\title{Polygons delineating British Columbia's Water Management Precincts. Water Precincts are
-jurisdictional areas within a Water District.}
+\title{British Columbia's Water Management Precincts.}
 \format{A spatialPolygonsDataFrame with polygons delineating Water Management Precincts for British Columbia.}
 \source{
 Original data from
@@ -17,7 +16,7 @@ Government License - British Columbia}.
 water_precincts
 }
 \description{
-Polygons delineating British Columbia's Water Management Precincts. Water Precincts are
+Water Precincts are
 jurisdictional areas within a Water District.
 }
 \keyword{datasets}

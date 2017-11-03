@@ -3,8 +3,7 @@
 \docType{data}
 \name{water_districts}
 \alias{water_districts}
-\title{Polygons delineating British Columbia's Water Management Districts. Water Districts are
-administrative areas established by the WATER REGULATIONS.}
+\title{British Columbia's Water Management Districts.}
 \format{A spatialPolygonsDataFrame with polygons delineating Water Management Districts for British Columbia.}
 \source{
 Original data from
@@ -17,7 +16,6 @@ Government License - British Columbia}.
 water_districts
 }
 \description{
-Polygons delineating British Columbia's Water Management Districts. Water Districts are
-administrative areas established by the WATER REGULATIONS.
+Water Districts are administrative areas established by the WATER REGULATIONS.
 }
 \keyword{datasets}

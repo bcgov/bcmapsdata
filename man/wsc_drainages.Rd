@@ -3,9 +3,8 @@
 \docType{data}
 \name{wsc_drainages}
 \alias{wsc_drainages}
-\title{For use in showing the 4th level drainages (sub-sub-drainages) in the national Drainage Area Framework and
-for use in determining the Water Survey of Canada alphanumeric codes that are used in hydrometric station numbering.}
-\format{Water Survey of Canada Sub-Sub-Drainage Areas}
+\title{Water Survey of Canada Sub-Sub-Drainage Areas}
+\format{An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 145 rows and 11 columns.}
 \source{
 Original data from
 \href{https://catalogue.data.gov.bc.ca/dataset/water-survey-of-canada-sub-sub-drainage-areas}{DataBC},
@@ -16,11 +15,14 @@ under the
 wsc_drainages
 }
 \description{
+For use in showing the 4th level drainages (sub-sub-drainages) in the national Drainage Area Framework and
+for use in determining the Water Survey of Canada alphanumeric codes that are used in hydrometric station numbering.
+}
+\details{
 Atlas of Canada 1,000,000 National Frameworks Data, Hydrology - Drainage Areas (WSC sub-sub drainage areas)
 from the Natural Resources Canada GeoGratis website. The dataset has been clipped to drainage areas within
 or adjacent to B.C.
-}
-\details{
+
 Downloaded from Natural Resources Canada GeoGratis website (http://geogratis.gc.ca/api/en/nrcan-rncan/ess-sst/30b33615-6dda-51a5-a9dd-308802714a28.html)
 and clipped to the area around B.C, then re-projected to BC Albers projection. Some attribute fields were removed, and other
 attribute field names were changed.

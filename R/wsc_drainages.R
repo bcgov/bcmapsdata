@@ -9,6 +9,8 @@
 # Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
+
+#' Water Survey of Canada Sub-Sub-Drainage Areas
 #'
 #' For use in showing the 4th level drainages (sub-sub-drainages) in the national Drainage Area Framework and
 #' for use in determining the Water Survey of Canada alphanumeric codes that are used in hydrometric station numbering.
@@ -16,10 +18,6 @@
 #' Atlas of Canada 1,000,000 National Frameworks Data, Hydrology - Drainage Areas (WSC sub-sub drainage areas)
 #' from the Natural Resources Canada GeoGratis website. The dataset has been clipped to drainage areas within
 #' or adjacent to B.C.
-#'
-#'
-#'
-#' @format Water Survey of Canada Sub-Sub-Drainage Areas
 #'
 #' @details Downloaded from Natural Resources Canada GeoGratis website (http://geogratis.gc.ca/api/en/nrcan-rncan/ess-sst/30b33615-6dda-51a5-a9dd-308802714a28.html)
 #' and clipped to the area around B.C, then re-projected to BC Albers projection. Some attribute fields were removed, and other
