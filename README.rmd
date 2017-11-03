@@ -24,6 +24,16 @@ package.
 
 ### Installation
 
+#### Stable version
+
+```r
+# install.packages("drat")
+drat::addRepo("bcgov")
+install.packages("bcmaps.rdata")
+```
+
+#### Development version
+
 ```r
 # install.packages("remotes")
 remotes::install_github("bcgov/bcmaps.rdata")

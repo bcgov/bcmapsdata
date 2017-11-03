@@ -8,6 +8,16 @@ This is a package that contains many spatial layers for British Columbia. It is 
 
 ### Installation
 
+#### Stable version
+
+``` r
+# install.packages("drat")
+drat::addRepo("bcgov")
+install.packages("bcmaps.rdata")
+```
+
+#### Development version
+
 ``` r
 # install.packages("remotes")
 remotes::install_github("bcgov/bcmaps.rdata")
