@@ -7,11 +7,8 @@
 \format{An \code{sf} polygons object with the boundaries of British Columbia's
 Natural Resource (NR) Regions, administrative boundaries established within NR Areas.}
 \source{
-Original data from
-\href{http://catalogue.data.gov.bc.ca/dataset/natural-resource-nr-regions}{DataBC},
-under the
-\href{https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61}{Open
-Government Licence - British Columbia}.
+Original data from \href{http://catalogue.data.gov.bc.ca/dataset/natural-resource-nr-regions}{DataBC},
+under the \href{https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61}{Open Government Licence - British Columbia}.
 }
 \usage{
 nr_regions
