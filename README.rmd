@@ -1,7 +1,7 @@
 ---
 output:
-  md_document:
-    variant: markdown_github
+  github_document:
+    html_preview: true
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 This is a package that contains many spatial layers for British Columbia. It is being built
 as a new 'backend' package to provide the layers available in the [bcmaps](https://github.com/bcgov/bcmaps)
-package.
+package.  We are following the strategy recommended by [Anderson and Eddelbuettel](https://journal.r-project.org/archive/2017/RJ-2017-026/index.html). 
 
 ### Installation
 
