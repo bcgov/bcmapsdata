@@ -5,7 +5,7 @@
 bcmaps.rdata
 ============
 
-This is a package that contains many spatial layers for British Columbia. It is being built as a new 'backend' package to provide the layers available in the [bcmaps](https://github.com/bcgov/bcmaps) package. We are following the strategy recommended by [Anderson and Eddelbuettel](https://journal.r-project.org/archive/2017/RJ-2017-026/index.html).
+This is a package that contains many spatial layers for British Columbia. It is a 'backend' data package to provide the layers available in the [bcmaps](https://github.com/bcgov/bcmaps) package. We are following the strategy recommended by [Anderson and Eddelbuettel](https://journal.r-project.org/archive/2017/RJ-2017-026/index.html).
 
 ### Installation
 
@@ -27,10 +27,6 @@ remotes::install_github("bcgov/bcmaps.rdata")
 ### Usage
 
 This package is best used in conjunction with the [bcmaps](https://github.com/bcgov/bcmaps). Please follow guidance there.
-
-### Project Status
-
-This package is under active development, in conjunction with a rewrite of the **bcmaps** package. That development is ongoing under the [new-frontend branch](https://github.com/bcgov/bcmaps/tree/new-frontend).
 
 ### Getting Help or Reporting an Issue
 
@@ -77,7 +73,7 @@ To add a new layer to the package, there are several steps you need to follow:
 
 #### Optionally add a shortcut function to the frontend bcmaps package:
 
-Install your local updated `bcmaps.rdata` package with `devtools::install()` before moving
+Install your local updated `bcmaps.rdata` package with `devtools::install()` before moving on to the next steps
 
 ##### In the [bcmaps](https://github.com/bcgov/bcmaps) package:
 
