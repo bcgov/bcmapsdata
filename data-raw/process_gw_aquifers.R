@@ -12,10 +12,10 @@
 
 source("data-raw/utils.R")
 
-gw_aquifers_zip <- "data-raw/gw_aquifers/BCGW_GW_AQUIFERS.zip"
+gw_aquifers_zip <- "data-raw/gw_aquifers/gw_aquifers.zip"
 
-unzip(gw_aquifers_zip, exdir = "data-raw/gw_aquifers")
+unzip(gw_aquifers_zip, exdir = "data-raw/gw_aquifers/")
 
-gw_aquifers <- process_file("data-raw/gw_aquifers/GW_AQUIFER/GW_AQUIFER_polygon.shp")
+gw_aquifers <- process_file("data-raw/gw_aquifers/GW_AQUIFERS_CLASSIFICATION_SVW.gdb")
 
 use_data(gw_aquifers, overwrite = TRUE, compress = "xz")
