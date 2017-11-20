@@ -12,9 +12,9 @@
 
 source("data-raw/utils.R")
 
-ecoprov_zip <- "data-raw/ecoprovinces/BCGW_ecoprovinces.zip"
+ecoprov_zip <- "data-raw/ecoprovinces/ecoprovinces.zip"
 unzip(ecoprov_zip, exdir = "data-raw/ecoprovinces")
 
-ecoprovinces <- process_file("data-raw/ecoprovinces/ERC_ECOPRO/ERC_ECOPRO_polygon.shp")
+ecoprovinces <- process_file("data-raw/ecoprovinces/ERC_ECOPROVINCES_SP.gdb/")
 
 use_data(ecoprovinces, overwrite = TRUE, compress = "xz")
