@@ -3,7 +3,7 @@
 \docType{data}
 \name{water_precincts}
 \alias{water_precincts}
-\title{British Columbia's Water Management Precincts.}
+\title{British Columbia's Water Management Precincts}
 \format{A spatialPolygonsDataFrame with polygons delineating Water Management Precincts for British Columbia.}
 \source{
 Original data from

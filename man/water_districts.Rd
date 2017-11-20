@@ -3,7 +3,7 @@
 \docType{data}
 \name{water_districts}
 \alias{water_districts}
-\title{British Columbia's Water Management Districts.}
+\title{British Columbia's Water Management Districts}
 \format{A spatialPolygonsDataFrame with polygons delineating Water Management Districts for British Columbia.}
 \source{
 Original data from

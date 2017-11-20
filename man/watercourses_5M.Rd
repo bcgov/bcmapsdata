@@ -3,7 +3,7 @@
 \docType{data}
 \name{watercourses_5M}
 \alias{watercourses_5M}
-\title{British Columbia watercourses at 1:5M scale.}
+\title{British Columbia watercourses at 1:5M scale}
 \format{An \code{sf} layer with watercourses at the 1:5M scale for British Columbia.}
 \source{
 Original data from

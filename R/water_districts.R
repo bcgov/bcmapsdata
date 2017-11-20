@@ -10,7 +10,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
-#' British Columbia's Water Management Districts. 
+#' British Columbia's Water Management Districts
 #' 
 #' Water Districts are administrative areas established by the WATER REGULATIONS.
 #'
