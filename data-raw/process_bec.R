@@ -16,7 +16,7 @@
 
 source("data-raw/utils.R")
 
-unzip()
+unzip("data-raw/bec/bec.zip", exdir = "data-raw/bec")
 
 bec <- process_file("data-raw/bec/BEC_BIOGEOCLIMATIC_POLY.gdb")
 
