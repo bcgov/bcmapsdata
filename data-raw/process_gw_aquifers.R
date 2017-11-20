@@ -14,7 +14,7 @@ source("data-raw/utils.R")
 
 gw_aquifers_zip <- "data-raw/gw_aquifers/gw_aquifers.zip"
 
-unzip(gw_aquifers_zip, exdir = "data-raw/gw_aquifers/")
+unzip(gw_aquifers_zip, exdir = "data-raw/gw_aquifers")
 
 gw_aquifers <- process_file("data-raw/gw_aquifers/GW_AQUIFERS_CLASSIFICATION_SVW.gdb")
 
