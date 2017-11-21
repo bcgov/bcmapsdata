@@ -1,0 +1,43 @@
+library(git2r)
+library(gh)
+library(httr)
+
+# Install the package locally and get the package version number
+devtools::install()
+ver <- as.character(packageVersion("bcmaps.rdata"))
+
+# Tag the repo with the package version:
+bcmaps.rdata_repo <- repository(".")
+tagname <- paste0("bcmaps.rdata version ", ver)
+tag(bcmaps.rdata_repo, ver, tagname)
+system("git push origin --tags")
+
+# List releases
+# rels <- gh(
+#   "/repos/bcgov/bcmaps.rdata/releases"
+# )
+
+# List most recent release
+# release <- gh(
+#   "/repos/bcgov/bcmaps.rdata/releases/:id",
+#   id = rels[[1]]$id
+# )
+
+# Create a release
+release <- gh("POST /repos/bcgov/bcmaps.rdata/releases", 
+   tag_name = ver, 
+   name = tagname)
+
+release_files <- list.files("data-extra", pattern = "\\.rda", full.names = TRUE)
+
+for (f in release_files) {
+  
+  r <- POST(gsub("\\{.+\\}$", "", release$upload_url),
+            query = list(name = basename(f)),
+            body = upload_file(f),
+            authenticate(github_pat(), ""), 
+            progress("up"))
+  
+  warn_for_status(r, task = paste0("upload ", f))
+}
+
