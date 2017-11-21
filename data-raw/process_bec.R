@@ -21,3 +21,4 @@ unzip("data-raw/bec/bec.zip", exdir = "data-raw/bec")
 bec <- process_file("data-raw/bec/BEC_BIOGEOCLIMATIC_POLY.gdb")
 
 use_data(bec, overwrite = TRUE, compress = "xz")
+file.rename("data/bec.rda", "data-extra/bec.rda")
