@@ -2,9 +2,8 @@ library(git2r)
 library(gh)
 library(httr)
 
-# Install the package locally and get the package version number
-devtools::install()
-ver <- as.character(packageVersion("bcmaps.rdata"))
+# Get the package version number
+ver <- as.character(read.dcf("DESCRIPTION", "Version"))
 
 # Tag the repo with the package version:
 bcmaps.rdata_repo <- repository(".")
