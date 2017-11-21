@@ -30,7 +30,7 @@ release <- gh("POST /repos/bcgov/bcmaps.rdata/releases",
 
 # For all rda files in data-extra, which are too big to include in the package,
 # attach them to the release so can be downloaded by bcmaps individually.
-release_files <- list.files("data-extra", pattern = "\\.rda", full.names = TRUE)
+release_files <- list.files("release-data", pattern = "\\.rds", full.names = TRUE)
 for (f in release_files) {
   
   r <- POST(gsub("\\{.+\\}$", "", release$upload_url),
