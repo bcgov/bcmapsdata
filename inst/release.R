@@ -7,9 +7,15 @@ ver <- as.character(read.dcf("DESCRIPTION", "Version"))
 
 # Tag the repo with the package version:
 bcmaps.rdata_repo <- repository(".")
-tagname <- paste0("bcmaps.rdata version ", ver)
-tag(bcmaps.rdata_repo, ver, tagname)
-system("git push origin --tags")
+status <- status(bcmaps.rdata_repo)
+if (!all(vapply(status, length, FUN.VALUE = integer(1)) == 0)) {
+  stop("You have uncommitted changes")
+} else {
+  tagname <- paste0("bcmaps.rdata version ", ver)
+  tag(bcmaps.rdata_repo, ver, tagname)
+  system("git push")
+  system("git push origin --tags")
+}
 
 # List releases
 # rels <- gh(
