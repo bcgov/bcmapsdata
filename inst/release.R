@@ -48,3 +48,13 @@ for (f in release_files) {
   
 }
 
+## Add new bcmaps.rdata to drat
+ver <- as.character(read.dcf("DESCRIPTION", "Version"))
+drat_loc <- normalizePath("../drat", winslash = "/", mustWork = TRUE)
+built_bcmaps.rdata_file <- devtools::build()
+drat_repo <- git2r::repository(drat_loc)
+git2r::pull(drat_repo)
+drat::insertPackage(built_bcmaps.rdata_file, drat_loc)
+git2r::add(drat_repo, ".")
+git2r::commit(drat_repo, paste("Add bcmaps.rdata", ver))
+git2r::push(drat_repo, credentials = git2r::cred_token())
