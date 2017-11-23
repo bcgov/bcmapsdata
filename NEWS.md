@@ -1,3 +1,6 @@
+# bcmaps.rdata 0.1.2
+* Removed `watersheds` layer
+
 # bcmaps.rdata 0.1.1
 
 * Added ecosections
