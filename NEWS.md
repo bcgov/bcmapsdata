@@ -1,3 +1,6 @@
+# bcmaps.rdata 0.1.2
+* Removed `watersheds` layer
+
 # bcmaps.rdata 0.1.0
 
 * Initial release
