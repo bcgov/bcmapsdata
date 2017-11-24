@@ -69,6 +69,7 @@ create_release <- function(version = as.character(read.dcf("DESCRIPTION", "Versi
 #'
 upload_release_attachments <- function(repo = ".", release_url) {
   stopifnot(requireNamespace("httr"))
+  stopifnot(requireNamespace("devtools"))
   
   release_files <- list.files(file.path(repo, "release/release-data")
                               , pattern = "\\.rds", full.names = TRUE)
@@ -77,7 +78,7 @@ upload_release_attachments <- function(repo = ".", release_url) {
     r <- httr::POST(gsub("\\{.+\\}$", "", release_url),
                     query = list(name = basename(f)),
                     body = httr::upload_file(f),
-                    httr::authenticate(httr::github_pat(), ""), 
+                    httr::authenticate(devtools::github_pat(), ""), 
                     httr::progress("up"))
     
     httr::stop_for_status(r, task = paste0("upload ", f))
@@ -95,7 +96,7 @@ add_to_drat <- function(drat_loc = "../drat", cleanup = TRUE) {
   stopifnot(requireNamespace("git2r"))
   stopifnot(requireNamespace("drat"))
   stopifnot(nzchar(Sys.getenv("GITHUB_PAT")))
-  
+  message("Building bcmaps.rdata...")
   built_bcmaps.rdata_file <- devtools::build()
   if (cleanup) {
     on.exit(unlink(built_bcmaps.rdata_file))

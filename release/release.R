@@ -2,10 +2,10 @@
 source("release/release_functions.R")
 
 # First tag the local bcmaps.rdata repo, then push the repo and the tags to GitHub
-version <- tag_pkg_repo()
+tag_pkg_repo()
 
 # Create a GitHub release for bcmaps.rdata using the tag we just created
-rel <- create_release(version)
+rel <- create_release()
 
 # Upload the large layers (e.g., bec) which are stored in release/release-data
 # to the GitHub release we just created
