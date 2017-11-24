@@ -2,7 +2,7 @@
 source("release/release_functions.R")
 
 # First tag the local bcmaps.rdata repo, then push the repo and the tags to GitHub
-tag_pkg_repo()
+version <- tag_pkg_repo()
 
 # Create a GitHub release for bcmaps.rdata
 rel <- create_release()

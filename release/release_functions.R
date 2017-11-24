@@ -16,6 +16,11 @@ tag_pkg_repo <- function(repo = ".", version = as.character(read.dcf(file.path(r
   }
   
   tagname <- paste0("bcmaps.rdata version ", version)
+  
+  if (version %in% names(git2r::tags(bcmaps.rdata_repo))) {
+    message("version ", version, " has already been tagged")
+    return(version)
+  }
   git2r::tag(bcmaps.rdata_repo, version, tagname)
   
   version
