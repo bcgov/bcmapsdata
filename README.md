@@ -1,9 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-<a rel="Exploration" href="https://github.com/BCDevExchange/docs/blob/master/discussion/projectstates.md"><img alt="Being designed and built, but in the lab. May change, disappear, or be buggy." style="border-width:0" src="https://assets.bcdevexchange.org/images/badges/exploration.svg" title="Being designed and built, but in the lab. May change, disappear, or be buggy." /></a>
-
 bcmaps.rdata
 ============
+
+<a rel="Delivery" href="https://github.com/BCDevExchange/assets/blob/master/README.md"><img alt="In production, but maybe in Alpha or Beta. Intended to persist and be supported." style="border-width:0" src="https://assets.bcdevexchange.org/images/badges/delivery.svg" title="In production, but maybe in Alpha or Beta. Intended to persist and be supported." /></a>[![Travis-CI Build Status](https://travis-ci.org/bcgov/bcmaps.rdata.svg?branch=master)](https://travis-ci.org/bcgov/bcmaps.rdata)
 
 This is a package that contains many spatial layers for British Columbia. It is a 'backend' data package to provide the layers available in the [bcmaps](https://github.com/bcgov/bcmaps) package. We are following the strategy recommended by [Anderson and Eddelbuettel](https://journal.r-project.org/archive/2017/RJ-2017-026/index.html).
 
@@ -12,9 +12,7 @@ This is a package that contains many spatial layers for British Columbia. It is 
 #### Stable version
 
 ``` r
-# install.packages("drat")
-drat::addRepo("bcgov")
-install.packages("bcmaps.rdata")
+install.packages('bcmaps.rdata', repos='https://bcgov.github.io/drat/')
 ```
 
 #### Development version
