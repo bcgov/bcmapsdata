@@ -21,5 +21,5 @@ unzip("data-raw/bec/bec.zip", exdir = "data-raw/bec")
 bec <- process_file("data-raw/bec/BEC_BIOGEOCLIMATIC_POLY.gdb")
 
 # Save in release-data for upload to gh release.
-unlink("release-data/bec.rds")
-saveRDS(bec, "release-data/bec.rds", compress = "xz")
+unlink("release/release-data/bec.rds")
+saveRDS(bec, "release/release-data/bec.rds", compress = "xz")

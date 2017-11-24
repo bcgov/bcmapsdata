@@ -64,12 +64,14 @@ create_release <- function(version = as.character(read.dcf("DESCRIPTION", "Versi
 #' For all rds files in release-data, which are too big to include in the package,
 #' attach them to the release so can be downloaded by bcmaps individually.
 #'
-#' @param release_url the url of the release - best obtained from the output of `release()`
+#' @param release_url the upload_url of the release - 
+#'                    best obtained from the output of `release()`
 #'
-upload_release_attachments <- function(release_url) {
+upload_release_attachments <- function(repo = ".", release_url) {
   stopifnot(requireNamespace("httr"))
   
-  release_files <- list.files("release-data", pattern = "\\.rds", full.names = TRUE)
+  release_files <- list.files(file.path(repo, "release/release-data")
+                              , pattern = "\\.rds", full.names = TRUE)
   for (f in release_files) {
     message("uploading ", f)
     r <- httr::POST(gsub("\\{.+\\}$", "", release_url),
