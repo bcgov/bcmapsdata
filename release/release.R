@@ -5,7 +5,7 @@ source("release/release_functions.R")
 version <- tag_pkg_repo()
 
 # Create a GitHub release for bcmaps.rdata
-rel <- create_release()
+rel <- create_release(version)
 
 # Upload the large layers (e.g., bec) which are stored in release/release-data
 # to the GitHub release we just created
