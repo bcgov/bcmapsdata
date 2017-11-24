@@ -12,10 +12,10 @@
 
 source("data-raw/utils.R")
 
-water_districts_zip <- "data-raw/water_districts/BCGW_78757263_1494953755959_11056.zip"
+water_districts_zip <- "data-raw/water_districts/water_districts.zip"
 
 unzip(water_districts_zip, exdir = "data-raw/water_districts")
 
-water_districts <- process_file("data-raw/water_districts/LWADM_DA/LWADM_DA_polygon.shp")
+water_districts <- process_file("data-raw/water_districts/LWADM_WATMGMT_DIST_AREA_SVW.gdb")
 
 use_data(water_districts, overwrite = TRUE, compress = "xz")

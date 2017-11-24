@@ -16,7 +16,7 @@ wsc_drainages_zip <- "data-raw/wsc_drainages/wsc_drainages.zip"
 
 unzip(wsc_drainages_zip, exdir = "data-raw/wsc_drainages")
 
-wsc_drainages <- process_file("data-raw/wsc_drainages/SSDA/SSDA_polygon.shp")
+wsc_drainages <- process_file("data-raw/wsc_drainages/DRP_SUB_SUB_DRAINAGES_1M_SP.gdb")
 
 ## deal with a non ASCII character in the data
 # wsc_drainages$WSCSSDA_EN <- iconv(wsc_drainages$WSCSSDA_EN, "UTF-8", sub = "")

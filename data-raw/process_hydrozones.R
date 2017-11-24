@@ -16,6 +16,6 @@ hydrologic_zip <- "data-raw/hydrozones/BC_hydrologic_zones.zip"
 
 unzip(hydrologic_zip , exdir = "data-raw/hydrozones")
 
-hydrozones <- process_file("data-raw/hydrozones/HYD_BC_H_Z/HYD_BC_H_Z_polygon.shp")
+hydrozones <- process_file("data-raw/hydrozones/HYDZ_HYDROLOGICZONE_SP.gdb")
 
 use_data(hydrozones, overwrite = TRUE, compress = "xz")

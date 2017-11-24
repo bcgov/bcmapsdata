@@ -12,10 +12,10 @@
 
 source("data-raw/utils.R")
 
-water_precincts_zip <- "data-raw/water_precincts/BCGW_78757263_1494953784758_11056.zip"
+water_precincts_zip <- "data-raw/water_precincts/water_precincts.zip"
 
 unzip(water_precincts_zip, exdir = "data-raw/water_precincts")
 
-water_precincts <- process_file("data-raw/water_precincts/LWADM_PA/LWADM_PA_polygon.shp")
+water_precincts <- process_file("data-raw/water_precincts/LWADM_WATMGMT_PREC_AREA_SVW.gdb")
 
 use_data(water_precincts, overwrite = TRUE, compress = "xz")

@@ -12,11 +12,12 @@
 
 source("data-raw/utils.R")
 
-watercourses_15M_zip <- "data-raw/canvec_15M_hydro/canvec_15M_CA_Hydro_shp.zip"
+watercourses_15M_zip <- "data-raw/canvec_15M_hydro/canvec_15M_CA_Hydro_fgdb.zip"
 
 unzip(watercourses_15M_zip, exdir = "data-raw/canvec_15M_hydro")
 
-watercourses_15M <- process_file("data-raw/canvec_15M_hydro/watercourse_1.shp", clip_bc = TRUE)
+watercourses_15M <- process_file("data-raw/canvec_15M_hydro/canvec_15M_CA_Hydro.gdb", 
+                                 layer = "watercourse_1", clip_bc = TRUE)
 
 watercourses_15M <- set_utf8(watercourses_15M)
 

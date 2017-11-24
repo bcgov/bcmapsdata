@@ -16,6 +16,6 @@ nr_areas_zip <- "data-raw/nr_areas/NR_areas.zip"
 
 unzip(nr_areas_zip, exdir = "data-raw/nr_areas")
 
-nr_areas <- process_file("data-raw/nr_areas/ADM_NR_AR/ADM_NR_AR_polygon.shp")
+nr_areas <- process_file("data-raw/nr_areas/ADM_NR_AREAS_SP.gdb")
 
 use_data(nr_areas, overwrite = TRUE, compress = "xz")
