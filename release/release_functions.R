@@ -23,7 +23,7 @@ tag_pkg_repo <- function(repo = ".", version = as.character(read.dcf(file.path(r
               credentials = git2r::cred_token())
   
   # Push tag
-  gitr::push(bcmaps.rdata_repo, "origin", paste0("refs/tags/", version), 
+  git2r::push(bcmaps.rdata_repo, "origin", paste0("refs/tags/", version), 
              credentials = git2r::cred_token())
   
   version
