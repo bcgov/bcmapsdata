@@ -1,3 +1,7 @@
+# bcmaps.rdata 0.1.3
+* Updated data sources to use gdb as the source instead of shp. This means that 
+they have more informative field names as the length is not limited (#3).
+
 # bcmaps.rdata 0.1.2
 * Removed `watersheds` layer
 
