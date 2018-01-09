@@ -4,7 +4,7 @@
 \name{wsc_drainages}
 \alias{wsc_drainages}
 \title{Water Survey of Canada Sub-Sub-Drainage Areas}
-\format{An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 145 rows and 11 columns.}
+\format{An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 145 rows and 14 columns.}
 \source{
 Original data from
 \href{https://catalogue.data.gov.bc.ca/dataset/water-survey-of-canada-sub-sub-drainage-areas}{DataBC},
