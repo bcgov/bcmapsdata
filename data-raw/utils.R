@@ -62,8 +62,8 @@ process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_st
   }
   
   if (repair) {
-    if (!is.na(sf::sf_extSoftVersion()["lwgeom"])) {
-      obj <- sf::st_make_valid(obj)
+    if (requireNamespace("lwgeom")) {
+      obj <- lwgeom::st_make_valid(obj)
     } else {
       if (!bcmaps_avail) stop("bcmaps package required")
       obj <- bcmaps::fix_geo_problems(obj)
