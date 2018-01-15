@@ -1,3 +1,6 @@
+# bcmaps.rdata 0.1.4
+* Added Timber Supply Areas as large downloadable layer (#4)
+
 # bcmaps.rdata 0.1.3
 * Updated data sources to use gdb as the source instead of shp. This means that 
 they have more informative field names as the length is not limited (#3).
