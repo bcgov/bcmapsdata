@@ -1,3 +1,6 @@
+# bcmaps.rdata 0.1.5
+* Added BC Cities as a layer (#5)
+
 # bcmaps.rdata 0.1.4
 * Added Timber Supply Areas as large downloadable layer (#4)
 
