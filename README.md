@@ -3,7 +3,7 @@
 bcmaps.rdata
 ============
 
-### Version 0.1.4
+### Version 0.1.5
 
 <a id="devex-badge" rel="Delivery" href="https://github.com/BCDevExchange/assets/blob/master/README.md"><img alt="In production, but maybe in Alpha or Beta. Intended to persist and be supported." style="border-width:0" src="https://assets.bcdevexchange.org/images/badges/delivery.svg" title="In production, but maybe in Alpha or Beta. Intended to persist and be supported." /></a> [![Travis-CI Build Status](https://travis-ci.org/bcgov/bcmaps.rdata.svg?branch=master)](https://travis-ci.org/bcgov/bcmaps.rdata)
 
@@ -77,9 +77,11 @@ Install your local updated `bcmaps.rdata` package with `devtools::install()` bef
 
 ##### In the [bcmaps](https://github.com/bcgov/bcmaps) package:
 
-1.  Run the internal function `bcmaps:::make_shortcuts()` while in the bcmaps package directory, then run `devtools::document()`. This will automatically generate a shortcut function in `bcmaps` for your new dataset.
+1.  Run `devtools::load_all()` to load the local version of the package.
 
-2.  Commit your changes and make a pull request to *bcmaps*.
+2.  Run the internal function `bcmaps:::make_shortcuts()` while in the bcmaps package directory, then run `devtools::document()`. This will automatically generate a shortcut function in `bcmaps` for your new dataset.
+
+3.  Commit your changes and make a pull request to *bcmaps*.
 
 ### License
 
