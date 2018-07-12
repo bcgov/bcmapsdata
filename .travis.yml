@@ -1,9 +1,22 @@
-# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+language: r
+dist: trusty
+sudo: required
 
-language: R
-sudo: false
-cache: packages
+before_install:
+  - sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable --yes
+  - sudo apt-get --yes --force-yes update -qq
+  - sudo apt-get install --yes libudunits2-dev libproj-dev libgeos-dev libgdal-dev
 
-env:
-  global:
-    - _R_CHECK_FORCE_SUGGESTS_=false
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+r:
+  - release
+  - devel
+
+matrix:
+  allow_failures:
+    - r: devel
+
