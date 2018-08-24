@@ -1,6 +1,6 @@
 Package: bcmaps.rdata
 Title: BC Spatial Data For Use In 'bcmaps' Package
-Version: 0.1.5
+Version: 0.1.5.9000
 Authors@R: c(person("Andy", "Teucher", email = "andy.teucher@gov.bc.ca", role = c("aut", "cre")),
                                    person("Province of British Columbia", role = "cph"))
 Description: This package holds all the spatial data for use in the 'bcmaps' package.
@@ -12,4 +12,4 @@ License: Apache License (== 2.0) | file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0

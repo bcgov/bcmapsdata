@@ -14,7 +14,6 @@ library(sf)
 library(bcmaps)
 library(rnaturalearth)
 library(dplyr)
-library(rmapshaper)
 
 
 source("data-raw/utils.R")
@@ -23,11 +22,11 @@ source("data-raw/utils.R")
 # Draw square polygon to intersect full data ------------------------------
 
 ## Square box on projected surface
-coords = list(matrix(c(-142, 61,
-                       -138, 47,
-                       -114, 47,
-                       -110, 61,
-                       -142, 61),
+coords = list(matrix(c(-142, 59.9,
+                       -137.69, 47,
+                       -114.31, 47,
+                       -110, 59.9,
+                       -142, 59.9),
                      ncol = 2,
                      byrow = TRUE))
 
@@ -35,34 +34,25 @@ outside_bc_box <- st_polygon(coords) %>%
   st_sfc(crs = 4326) %>%
   transform_bc_albers() 
 
-
 nw_prov_states <- ne_states(country = c("Canada","United States of America"), returnclass = "sf") %>% 
   filter(name %in% c("Washington","British Columbia","Idaho","Montana","Alberta","Yukon","Alaska","Northwest Territories")) %>% 
   transform_bc_albers()
 
 bc_neighbours <- nw_prov_states %>% 
   st_intersection(outside_bc_box) %>% 
-  select(iso_a2, name, type, postal) #%>% 
-  #ms_simplify() ## I think simplifies it too much
+  select(iso_a2, name, type, postal) 
+
+## Pull out a Pacific Ocean polygon and give it the same cols as bc_neighbours
+bc_oceans <- outside_bc_box %>% 
+  st_difference(bc_neighbours %>%
+                  mutate(ID = 1) %>% 
+                  group_by(ID) %>% 
+                  summarise()) %>% 
+  as.data.frame() %>% 
+  st_as_sf() %>% 
+  mutate(iso_a2 = "OC", name = "Pacific Ocean", type = "Ocean", postal = NA) 
+
+## Bind the neighbours and ocean data together
+bc_neighbours <- rbind(bc_neighbours, bc_oceans)
 
 use_data(bc_neighbours, overwrite = TRUE, compress = "xz")
-
-
-
-
-
-## Adding the oceans WIP
-
-# oceans <- ne_download(category = "physical", type = "ocean", scale = "medium", returnclass = "sf") %>% 
-#   transform_bc_albers()
-# 
-# ## Error here
-# oceans_nw <- oceans %>% 
-#   st_intersection(lwgeom::st_make_valid(outside_bc_box))
-# 
-# 
-# ggplot() +
-#   geom_sf(data = bc_neighbours) +
-#   geom_sf(data = oceans)
-
-

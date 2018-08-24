@@ -1,3 +1,6 @@
+# bcmaps.rdata 0.1.6
+* Added bc_neighbours as a layer (#36)
+
 # bcmaps.rdata 0.1.5
 * Added BC Cities as a layer (#5)
 

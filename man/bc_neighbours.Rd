@@ -3,19 +3,20 @@
 \docType{data}
 \name{bc_neighbours}
 \alias{bc_neighbours}
-\title{Boundary of British Columbia and provinces/states that border British Columbia}
-\format{An object of class \code{sf} (inherits from \code{data.frame}) with 8 rows and 5 columns.}
+\title{Boundary of British Columbia, provinces/states and the portion of the Pacific Ocean that borders British Columbia}
+\format{An object of class \code{sf} (inherits from \code{data.frame}) with 9 rows and 5 columns.}
 \usage{
 bc_neighbours
 }
 \description{
-Boundary of British Columbia and provinces/states that border British Columbia bounded by a square projected box.
-This layer is primarily intended for plotting purposes.
+Administrative boundaries and the Pacific Oceans surrounding and including British Columbia
+bounded by a square projected box. This layer is primarily intended for plotting purposes.
 }
 \details{
 Downloaded from \href{https://www.naturalearthdata.com/}{Natural Earth} via
 \href{https://github.com/ropensci/rnaturalearth}{rnaturalearth} and clipped to the area within a bounding box
 then re-projected to BC Albers projection. Some attribute fields were removed, and other attribute
-field names were changed.
+field names were changed. Pacific Ocean polygon is generate as the difference between the terrestrial polygons
+and the bounding box
 }
 \keyword{datasets}

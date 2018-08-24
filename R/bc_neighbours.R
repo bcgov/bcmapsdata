@@ -11,16 +11,17 @@
 # See the License for the specific language governing permissions and limitations under the License.
 
 
-#' Boundary of British Columbia and provinces/states that border British Columbia 
+#' Boundary of British Columbia, provinces/states and the portion of the Pacific Ocean that borders British Columbia 
 #'
-#' Boundary of British Columbia and provinces/states that border British Columbia bounded by a square projected box.
-#' This layer is primarily intended for plotting purposes. 
+#' Administrative boundaries and the Pacific Oceans surrounding and including British Columbia
+#' bounded by a square projected box. This layer is primarily intended for plotting purposes. 
 #'
 #'
 #' @details Downloaded from \href{https://www.naturalearthdata.com/}{Natural Earth} via
 #' \href{https://github.com/ropensci/rnaturalearth}{rnaturalearth} and clipped to the area within a bounding box
 #' then re-projected to BC Albers projection. Some attribute fields were removed, and other attribute 
-#' field names were changed.
+#' field names were changed. Pacific Ocean polygon is generate as the difference between the terrestrial polygons 
+#' and the bounding box
 #'
 #'
 
