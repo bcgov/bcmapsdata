@@ -20,7 +20,7 @@
 #' @details Downloaded from \href{https://www.naturalearthdata.com/}{Natural Earth} via
 #' \href{https://github.com/ropensci/rnaturalearth}{rnaturalearth} and clipped to the area within a bounding box
 #' then re-projected to BC Albers projection. Some attribute fields were removed, and other attribute 
-#' field names were changed. Pacific Ocean polygon is generate as the difference between the terrestrial polygons 
+#' field names were changed. Pacific Ocean polygon is generated as the difference between the terrestrial polygons 
 #' and the bounding box
 #'
 #'
