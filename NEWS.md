@@ -1,4 +1,4 @@
-# bcmaps.rdata 0.1.6
+# bcmaps.rdata 0.2.0
 * Added bc_neighbours as a layer (#36)
 
 # bcmaps.rdata 0.1.5
