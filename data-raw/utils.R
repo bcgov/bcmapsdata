@@ -21,7 +21,7 @@ set_utf8 <- function(sf_obj) {
   sf_obj
 }
 
-#' Prepare a spatial file for inclusion in bcmaps.rdata package
+#' Prepare a spatial file for inclusion in bcmapsdata package
 #'
 #' @param file path to shp or gdb
 #' @param transform transform to BC Albers (default `TRUE`)
