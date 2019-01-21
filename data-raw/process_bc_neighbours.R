@@ -53,9 +53,9 @@ bc_oceans <- outside_bc_box %>%
   mutate(iso_a2 = "OC", name = "Pacific Ocean", type = "Ocean", postal = NA) 
 
 ## Bind the neighbours and ocean data together
-bc_neighbours <- rbind(bc_neighbours, bc_oceans) %>% 
-  as_tibble() %>% 
-  st_as_sf()
+bc_neighbours <- rbind(bc_neighbours, bc_oceans)
+
+class(bc_neighbours) <- c("sf", "tbl_df", "tbl", "data.frame")
 
 
 use_data(bc_neighbours, overwrite = TRUE, compress = "xz")
