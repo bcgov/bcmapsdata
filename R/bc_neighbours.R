@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and limitations under the License.
 
 
-#' Boundary of British Columbia, provinces/states and the portion of the Pacific Ocean that borders British Columbia 
+#' British Columbia and neighbouring features
 #'
 #' Administrative boundaries and the Pacific Oceans surrounding and including British Columbia
 #' bounded by a square projected box. This layer is primarily intended for plotting purposes. 
