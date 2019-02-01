@@ -10,7 +10,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
-#' bcmaps.rdata: A data package providing various map layers for British Columbia. 
+#' bcmapsdata: A data package providing various map layers for British Columbia. 
 #' This package serves as the backend 'datastore' for the bcmaps package.
 #'
 #' Various layers of B.C., including administrative boundaries, natural
@@ -25,5 +25,5 @@
 #' Each layer's help page contians a section describing the source for the data.
 #'
 #' @docType package
-#' @name bcmaps.rdata
+#' @name bcmapsdata
 NULL

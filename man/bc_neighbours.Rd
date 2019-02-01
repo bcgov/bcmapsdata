@@ -3,7 +3,7 @@
 \docType{data}
 \name{bc_neighbours}
 \alias{bc_neighbours}
-\title{Boundary of British Columbia, provinces/states and the portion of the Pacific Ocean that borders British Columbia}
+\title{British Columbia and neighbouring features}
 \format{An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 9 rows and 5 columns.}
 \usage{
 bc_neighbours

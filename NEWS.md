@@ -1,3 +1,6 @@
+# bcmapsdata 0.3.0
+- Change name of package to bcmapsdata (#9)
+
 # bcmaps.rdata 0.2.0
 * Added bc_neighbours as a layer (#36)
 
