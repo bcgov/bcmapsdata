@@ -46,7 +46,7 @@ push_repo_and_tags <- function(repo, version) {
 list_releases <- function() {
   stopifnot(requireNamespace("gh"))
   rels <- gh::gh(
-    "/repos/bcgov/bcmaps.rdata/releases"
+    "/repos/bcgov/bcmapsdata/releases"
   )
   rels
 }
