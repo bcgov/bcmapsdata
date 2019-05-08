@@ -1,3 +1,6 @@
+# bcmapsdata 0.3.1
+- Update `regional_districts`, as "Powell River Regional District" was renamed to "qathet Regional District".
+
 # bcmapsdata 0.3.0
 - Change name of package to bcmapsdata (#9)
 
