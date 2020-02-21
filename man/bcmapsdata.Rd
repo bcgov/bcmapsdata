@@ -3,7 +3,6 @@
 \docType{package}
 \name{bcmapsdata}
 \alias{bcmapsdata}
-\alias{bcmapsdata-package}
 \title{bcmapsdata: A data package providing various map layers for British Columbia.
 This package serves as the backend 'datastore' for the bcmaps package.}
 \description{
