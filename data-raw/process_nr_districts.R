@@ -12,10 +12,10 @@
 
 source("data-raw/utils.R")
 
-library(bcdata)
+nr_districts_zip <- "data-raw/nr_districts/nr_districts.zip"
 
-nr_districts <- bcdc_get_data('0bc73892-e41f-41d0-8d8e-828c16139337')
+unzip(nr_districts_zip, exdir = "data-raw/nr_districts")
 
-class(nr_districts) <- setdiff(class(nr_districts), "bcdc_sf")
+nr_districts <- process_file("data-raw/nr_districts/ADM_NR_DISTRICTS_SP.gdb")
 
 use_data(nr_districts, overwrite = TRUE, compress = "xz")
