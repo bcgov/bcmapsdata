@@ -80,18 +80,21 @@ create_release <- function(version = as.character(read.dcf("DESCRIPTION", "Versi
 upload_release_attachments <- function(repo = ".", release_url) {
   stopifnot(requireNamespace("httr"))
   stopifnot(requireNamespace("devtools"))
+  stopifnot(requireNamespace("gh"))
   
   release_files <- list.files(file.path(repo, "release/release-data")
                               , pattern = "\\.rds", full.names = TRUE)
+  
+  upload_url <- gsub("\\{[^\\}]+}", "", rel$upload_url)
+  
   for (f in release_files) {
     message("uploading ", f)
-    r <- httr::POST(gsub("\\{.+\\}$", "", release_url),
-                    add_auth_header(), 
-                    query = list(name = basename(f)),
-                    body = httr::upload_file(f),
-                    httr::progress("up"))
     
-    httr::stop_for_status(r, task = paste0("upload ", f))
+    gh::gh(
+      paste0("POST ", upload_url, "?name=", basename(f)), 
+      readBin(f, raw(), file.info(f)$size),
+      .send_headers = c("Content-Type" = "application/octet-stream")
+    )
   }
   invisible(TRUE)
 }
