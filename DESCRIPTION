@@ -1,6 +1,6 @@
 Package: bcmapsdata
 Title: BC Spatial Data For Use In 'bcmaps' Package
-Version: 0.3.2
+Version: 0.3.3
 Authors@R: c(person("Andy", "Teucher", email = "andy.teucher@gov.bc.ca", role = c("aut", "cre")),
              person("Sam", "Albers", email = "sam.albers@gov.bc.ca", role = c("aut")),
                                    person("Province of British Columbia", role = "cph"))
