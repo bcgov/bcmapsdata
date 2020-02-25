@@ -1,3 +1,6 @@
+# bcmapsdata 0.3.3
+- Remove `bcdc_sf` class from `nr_districts` (#16)
+
 # bcmapsdata 0.3.2
 - Update `nr_districts` from the catalogue record
 

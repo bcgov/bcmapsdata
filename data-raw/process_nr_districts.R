@@ -14,6 +14,8 @@ source("data-raw/utils.R")
 
 library(bcdata)
 
-nr_districts <- bcdc_get_data('0bc73892-e41f-41d0-8d8e-828c16139337') 
+nr_districts <- bcdc_get_data('0bc73892-e41f-41d0-8d8e-828c16139337')
+
+class(nr_districts) <- setdiff(class(nr_districts), "bcdc_sf")
 
 use_data(nr_districts, overwrite = TRUE, compress = "xz")
