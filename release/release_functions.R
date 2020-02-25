@@ -86,9 +86,9 @@ upload_release_attachments <- function(repo = ".", release_url) {
   for (f in release_files) {
     message("uploading ", f)
     r <- httr::POST(gsub("\\{.+\\}$", "", release_url),
+                    add_auth_header(), 
                     query = list(name = basename(f)),
                     body = httr::upload_file(f),
-                    httr::authenticate(devtools::github_pat(), ""), 
                     httr::progress("up"))
     
     httr::stop_for_status(r, task = paste0("upload ", f))
@@ -129,4 +129,12 @@ add_to_drat <- function(drat_loc = "../drat", cleanup = TRUE) {
   git2r::push(drat_repo, "origin", "refs/heads/gh-pages", 
               credentials = git2r::cred_token())
   
+}
+
+add_auth_header <- function() {
+  pat <- Sys.getenv("GITHUB_PAT")
+  if (nzchar(pat)) {
+    return(httr::add_headers(Authentication = paste0("token ", pat)))
+  }
+  invisible(NULL)
 }
