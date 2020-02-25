@@ -85,7 +85,7 @@ upload_release_attachments <- function(repo = ".", release_url) {
   release_files <- list.files(file.path(repo, "release/release-data")
                               , pattern = "\\.rds", full.names = TRUE)
   
-  upload_url <- gsub("\\{[^\\}]+}", "", rel$upload_url)
+  upload_url <- gsub("\\{[^\\}]+}", "", release_url)
   
   for (f in release_files) {
     message("uploading ", f)
