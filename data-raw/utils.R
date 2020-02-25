@@ -72,3 +72,11 @@ process_file <- function(file, layer, transform = TRUE, repair = TRUE, filter_st
   
   obj
 }
+
+process_from_bcdc <- function(record_id, resource_id = NULL) {
+  if (!requireNamespace("bcdata")) stop("bcdata package required")
+  
+  data <- bcdc_get_data(record_id, resource = resource_id)
+  class(data) <- setdiff(class(data), "bcdc_sf")
+  data
+}

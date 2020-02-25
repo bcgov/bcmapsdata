@@ -16,9 +16,7 @@
 
 source("data-raw/utils.R")
 
-unzip("data-raw/tsa/tsa.zip", exdir = "data-raw/tsa")
-
-tsa <- process_file("data-raw/tsa/FADM_TSA.gdb")
+tsa <- process_from_bcdc("WHSE_ADMIN_BOUNDARIES.FADM_TSA")
 
 # Save in release-data for upload to gh release.
 unlink("release/release-data/tsa.rds")

@@ -16,9 +16,13 @@
 
 source("data-raw/utils.R")
 
-unzip("data-raw/bec/bec.zip", exdir = "data-raw/bec")
+library(bcdata)
 
-bec <- process_file("data-raw/bec/BEC_BIOGEOCLIMATIC_POLY.gdb")
+bec <- process_from_bcdc("WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY")
+
+# unzip("data-raw/bec/bec.zip", exdir = "data-raw/bec")
+# 
+# bec <- process_file("data-raw/bec/BEC_BIOGEOCLIMATIC_POLY.gdb")
 
 # Save in release-data for upload to gh release.
 unlink("release/release-data/bec.rds")
