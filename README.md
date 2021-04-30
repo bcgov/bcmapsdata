@@ -5,7 +5,7 @@
 
 ### Version 0.3.3
 
-[![img](https://img.shields.io/badge/Lifecycle-Dormant-%23ff7f2a)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
+[![img](https://img.shields.io/badge/Lifecycle-Retired-d45500)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
 [![Travis-CI Build
 Status](https://travis-ci.org/bcgov/bcmapsdata.svg?branch=master)](https://travis-ci.org/bcgov/bcmapsdata)
 
